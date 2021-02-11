@@ -1,0 +1,89 @@
+#topbar {
+	background-color: #01305f;
+	color: #fff;
+	height: 56.4px;
+}
+
+#topbar .container {
+	padding: 0px 10px;
+}
+
+#topbar span {
+	font-size: 12px;
+	margin-top: 1px;
+}
+
+#topbar .btn {
+	border-radius: 10px;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 600;
+	padding: 0.5px 9px;
+}
+
+#topbar .btn i {
+	font-weight: 600;
+	margin-right: 5px;
+}
+
+#topbar .btn:first-of-type {
+	background-color: #fff;
+	color: #01305f;
+}
+
+#topbar .btn:last-of-type {
+	background-color: rgb(27, 169, 16);
+	color: #fff;
+	margin-left: 53px;
+	transition: background-color 0.3s ease;
+}
+
+#topbar .btn:last-of-type:active,
+#topbar .btn:last-of-type:focus,
+#topbar .btn:last-of-type:hover {
+	background-color: #21c814;
+}
+
+#topbar #social-media {
+	display: grid;
+	grid-template-columns: repeat(3, 32.3906px);
+	grid-column-gap: 6px;
+	margin-top: 3px;
+}
+
+#topbar #social-media a {
+	align-items: center;
+	background-color: #fff;
+	border-radius: 50%;
+	color: #01305f;
+	display: flex;
+	font-size: 18px;
+	height: 32.3906px;
+	justify-content: center;
+	text-decoration: none;
+	transition: opacity 0.3s ease;
+	width: 32.3906px;
+	z-index: 20;
+}
+
+#topbar #social-media a:active,
+#topbar #social-media a:focus,
+#topbar #social-media a:hover {
+	opacity: 0.9;
+}
+
+@media (min-width: 768px) {
+	#topbar {
+		height: 52.4px;
+	}
+
+	#topbar #social-media {
+		margin-left: 36.953125px;
+		margin-top: 0px;
+	}
+}
+
+@media (min-width: 992px) {
+	#topbar #social-media {
+		width: 224px;
+	}
+}

@@ -3,7 +3,7 @@
 	background-position: center center;
 	background-repeat: no-repeat;
 	background-size: 170px auto;
-	box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.1);
+	box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.25);
 	height: 167px;
 	padding: 7.85px 0px;
 }
@@ -20,10 +20,11 @@
 	position: fixed;
 	top: 30px;
 	width: 100%;
+	z-index: 10;
 }
 
 #navbar #nav ul {
-	background-color: #01305f;
+	background-color: var(--primary-color);
 	margin-right: 7.265625px;
 	max-height: 0;
 	overflow: hidden;
@@ -57,7 +58,7 @@
 /* toggler button */
 
 #navbar #menu-toggler {
-	background-color: #01305f;
+	background-color: var(--primary-color);
 	border: 2px solid #fff;
 	border-radius: 50%;
 	color: #fff;
@@ -166,7 +167,7 @@
 	#navbar #nav li a:focus,
 	#navbar #nav li a:hover {
 		background-color: transparent;
-		color: #01305f;
+		color: var(--primary-color);
 	}
 
 	#navbar #menu-toggler {

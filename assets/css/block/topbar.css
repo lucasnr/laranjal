@@ -1,5 +1,5 @@
 #topbar {
-	background-color: #01305f;
+	background-color: var(--primary-color);
 	color: #fff;
 	height: 56.4px;
 }
@@ -27,7 +27,7 @@
 
 #topbar .btn:first-of-type {
 	background-color: #fff;
-	color: #01305f;
+	color: var(--primary-color);
 }
 
 #topbar .btn:last-of-type {

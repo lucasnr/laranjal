@@ -13,6 +13,16 @@
 			integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
 			crossorigin="anonymous"
 		/>
+		<script
+			src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+			crossorigin="anonymous"
+		></script>
 		<!-- end:bootstrap -->
 		<!-- fontawesome -->
 		<script
@@ -32,6 +42,7 @@
 		<link rel="stylesheet" href="./assets/css/block/topbar.css" />
 		<link rel="stylesheet" href="./assets/css/block/navbar.css" />
 		<link rel="stylesheet" href="./assets/css/block/footer.css" />
+		<link rel="stylesheet" href="./assets/css/carro0.css" />
 	</head>
 	<body>
 		<aside
@@ -123,7 +134,546 @@
 			</div>
 		</nav>
 
-		<main></main>
+		<main>
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-7 col-xl-8">
+						<section id="gallery">
+							<img src="./assets/img/carro0/1.jpg" alt="Carro 0km" />
+
+							<div id="gallery-row">
+								<div class="gallery-item">
+									<img src="./assets/img/carro0/2.jpg" alt="Carro 0km" />
+								</div>
+								<div class="gallery-item">
+									<img src="./assets/img/carro0/3.jpg" alt="Carro 0km" />
+								</div>
+								<div class="gallery-item">
+									<img src="./assets/img/carro0/4.jpg" alt="Carro 0km" />
+								</div>
+								<div class="gallery-item">
+									<img src="./assets/img/carro0/5.jpg" alt="Carro 0km" />
+								</div>
+								<div class="gallery-item">
+									<img src="./assets/img/carro0/6.jpg" alt="Carro 0km" />
+								</div>
+							</div>
+						</section>
+					</div>
+
+					<div class="col-lg-5 col-xl-4">
+						<form class="form">
+							<header class="text-center">
+								<h4 class="form-title">Está interessado?</h4>
+								<p class="m-0">
+									Preencha o formulário abaixo
+									<br class="d-none d-md-block" />
+									e um de nosso especialistas entrará em contato!
+								</p>
+							</header>
+
+							<div class="form-body">
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="Nome" />
+								</div>
+
+								<div class="form-group">
+									<input
+										type="email"
+										class="form-control"
+										placeholder="E-mail"
+									/>
+								</div>
+
+								<div class="form-group">
+									<input
+										type="tel"
+										class="form-control"
+										placeholder="Telefone/Whatsapp"
+									/>
+								</div>
+
+								<div class="px-2">
+									<label class="d-block mb-0">Veículo na troca?</label>
+									<div
+										class="custom-control custom-radio custom-control-inline"
+									>
+										<input
+											type="radio"
+											id="veiculo-na-troca-sim"
+											name="veiculo-na-troca"
+											class="custom-control-input"
+											value="sim"
+											checked
+										/>
+										<label
+											class="custom-control-label"
+											for="veiculo-na-troca-sim"
+										>
+											Sim
+										</label>
+									</div>
+									<div
+										class="custom-control custom-radio custom-control-inline"
+									>
+										<input
+											type="radio"
+											id="veiculo-na-troca-nao"
+											name="veiculo-na-troca"
+											class="custom-control-input"
+											value="nao"
+										/>
+										<label
+											class="custom-control-label"
+											for="veiculo-na-troca-nao"
+										>
+											Não
+										</label>
+									</div>
+								</div>
+
+								<div class="px-2">
+									<label class="d-block mb-0 mt-2">
+										Quero receber contato por:
+									</label>
+									<div
+										class="custom-control custom-radio custom-control-inline"
+									>
+										<input
+											type="radio"
+											id="contato-email"
+											name="contato"
+											class="custom-control-input"
+											value="email"
+											checked
+										/>
+										<label class="custom-control-label" for="contato-email">
+											E-mail
+										</label>
+									</div>
+									<div
+										class="custom-control custom-radio custom-control-inline"
+									>
+										<input
+											type="radio"
+											id="contato-whatsapp"
+											name="contato"
+											class="custom-control-input"
+											value="whatsapp"
+										/>
+										<label class="custom-control-label" for="contato-whatsapp">
+											Whatsapp
+										</label>
+									</div>
+									<div
+										class="custom-control custom-radio custom-control-inline"
+									>
+										<input
+											type="radio"
+											id="contato-telefone"
+											name="contato"
+											class="custom-control-input"
+											value="Nao"
+										/>
+										<label class="custom-control-label" for="contato-telefone">
+											Telefone
+										</label>
+									</div>
+								</div>
+
+								<button
+									type="submit"
+									class="btn btn-lg btn-success mx-auto d-block text-uppercase font-weight-bold mt-4 rounded-pill px-3 px-xl-5"
+								>
+									Tenho interesse
+								</button>
+							</div>
+							<!-- end:form-body -->
+						</form>
+					</div>
+				</div>
+
+				<section id="tabs" class="pt-5">
+					<h2 class="title">Ficha Técnica</h2>
+
+					<div class="p-4 d-md-inline-flex flex-column shadow">
+						<ul class="nav nav-tabs d-inline-flex" role="tablist">
+							<li class="nav-item">
+								<a
+									class="nav-link active"
+									id="especificacoes-tab"
+									data-toggle="tab"
+									href="#especificacoes"
+									role="tab"
+									aria-controls="especificacoes"
+									aria-selected="true"
+								>
+									Especificações
+								</a>
+							</li>
+							<li class="nav-item">
+								<a
+									class="nav-link"
+									id="opicionais-tab"
+									data-toggle="tab"
+									href="#opicionais"
+									role="tab"
+									aria-controls="opicionais"
+									aria-selected="false"
+								>
+									Opicionais
+								</a>
+							</li>
+						</ul>
+						<div class="tab-content d-inline-flex" id="myTabContent">
+							<div
+								class="tab-pane fade show active"
+								id="especificacoes"
+								role="tabpanel"
+								aria-labelledby="especificacoes-tab"
+							>
+								<div class="d-sm-flex">
+									<ul class="list-unstyled mb-0 mr-sm-4 mr-md-5">
+										<li>
+											<strong>Marca: </strong>
+											Volkswagen
+										</li>
+										<li>
+											<strong>Versão: </strong>
+											1.6 MSI TOTAL FLEX 4P MANUAL
+										</li>
+										<li>
+											<strong>Quilometragem: </strong>
+											0KM
+										</li>
+										<li>
+											<strong>Portas: </strong>
+											4
+										</li>
+										<li>
+											<strong>Cor: </strong>
+											Cinza
+										</li>
+									</ul>
+
+									<ul class="list-unstyled mb-0 ml-sm-4 ml-md-5">
+										<li>
+											<strong>Modelo: </strong>
+											Voyage
+										</li>
+										<li>
+											<strong>Combustível: </strong>
+											Gasolina e Álcool (Bi)
+										</li>
+										<li>
+											<strong>Ano: </strong>
+											2019/2020
+										</li>
+										<li>
+											<strong>Origem: </strong>
+											Nacional
+										</li>
+									</ul>
+								</div>
+							</div>
+							<div
+								class="tab-pane fade"
+								id="opicionais"
+								role="tabpanel"
+								aria-labelledby="opicionais-tab"
+							>
+								<div class="d-sm-flex">
+									<ul class="list-unstyled mb-0 mr-sm-4 mr-md-5">
+										<li>
+											<strong>Modelo: </strong>
+											Voyage
+										</li>
+										<li>
+											<strong>Combustível: </strong>
+											Gasolina e Álcool (Bi)
+										</li>
+										<li>
+											<strong>Ano: </strong>
+											2019/2020
+										</li>
+										<li>
+											<strong>Origem: </strong>
+											Nacional
+										</li>
+									</ul>
+
+									<ul class="list-unstyled mb-0 ml-sm-4 ml-md-5">
+										<li>
+											<strong>Marca: </strong>
+											Volkswagen
+										</li>
+										<li>
+											<strong>Versão: </strong>
+											1.6 MSI TOTAL FLEX 4P MANUAL
+										</li>
+										<li>
+											<strong>Quilometragem: </strong>
+											0KM
+										</li>
+										<li>
+											<strong>Portas: </strong>
+											4
+										</li>
+										<li>
+											<strong>Cor: </strong>
+											Cinza
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section id="offers" class="py-5">
+					<h2 class="title text-center">Confira outras ofertas</h2>
+
+					<div class="custom-carousel-wrapper">
+						<button class="custom-carousel-button">
+							<i class="fas fa-chevron-left"></i>
+						</button>
+
+						<div id="offers-carousel" class="custom-carousel">
+							<div class="offer-item custom-carousel-item">
+								<img src="./assets/img/carro0/oferta-1.jpg" alt="Carro 0km" />
+								<h2 class="offer-name">
+									Volkswagen Voyage 1.6 MSI Totalflex 4p Manual
+								</h2>
+
+								<div class="offer-details">
+									<div class="px-lg-5 row justify-content-center">
+										<div class="col col-6">
+											<img src="./assets/img/icons/icon-1.jpg" alt="Ícone" />
+											Flex
+										</div>
+										<div class="col col-6">
+											<img src="./assets/img/icons/icon-2.jpg" alt="Ícone" />
+											2020
+										</div>
+										<div class="col-12"></div>
+										<div class="col col-6">
+											<img src="./assets/img/icons/icon-3.jpg" alt="Ícone" />
+											0 km
+										</div>
+										<div class="col col-6">
+											<img src="./assets/img/icons/icon-4.jpg" alt="Ícone" />
+											Prata
+										</div>
+									</div>
+								</div>
+
+								<h2 class="offer-value">R$ 68.900,00</h2>
+							</div>
+
+							<div class="offer-item custom-carousel-item">
+								<img src="./assets/img/carro0/oferta-2.jpg" alt="Carro 0km" />
+								<h2 class="offer-name">
+									Volkswagen Gol 1.0 12V MPI Totalflex 4P Manual
+								</h2>
+
+								<div class="offer-details">
+									<div class="px-lg-5 row justify-content-center">
+										<div class="col col-6">
+											<img src="./assets/img/icons/icon-1.jpg" alt="Ícone" />
+											Flex
+										</div>
+										<div class="col col-6">
+											<img src="./assets/img/icons/icon-2.jpg" alt="Ícone" />
+											2020
+										</div>
+										<div class="col-12"></div>
+										<div class="col col-6">
+											<img src="./assets/img/icons/icon-3.jpg" alt="Ícone" />
+											0 km
+										</div>
+										<div class="col col-6">
+											<img src="./assets/img/icons/icon-4.jpg" alt="Ícone" />
+											Prata
+										</div>
+									</div>
+								</div>
+
+								<h2 class="offer-value">R$ 68.900,00</h2>
+							</div>
+
+							<div class="offer-item custom-carousel-item">
+								<img src="./assets/img/carro0/oferta-3.jpg" alt="Carro 0km" />
+								<h2 class="offer-name">
+									Volkswagen Fox 1.6 MSI total flex connect manual
+								</h2>
+
+								<div class="offer-details">
+									<div class="px-lg-5 row justify-content-center">
+										<div class="col col-6">
+											<img src="./assets/img/icons/icon-1.jpg" alt="Ícone" />
+											Flex
+										</div>
+										<div class="col col-6">
+											<img src="./assets/img/icons/icon-2.jpg" alt="Ícone" />
+											2020
+										</div>
+										<div class="col-12"></div>
+										<div class="col col-6">
+											<img src="./assets/img/icons/icon-3.jpg" alt="Ícone" />
+											0 km
+										</div>
+										<div class="col col-6">
+											<img src="./assets/img/icons/icon-4.jpg" alt="Ícone" />
+											Prata
+										</div>
+									</div>
+								</div>
+
+								<h2 class="offer-value">R$ 68.900,00</h2>
+							</div>
+
+							<div class="offer-item custom-carousel-item">
+								<img src="./assets/img/carro0/oferta-4.jpg" alt="Carro 0km" />
+								<h2 class="offer-name">
+									Volkswagen Polo 1.0 200 TSI Comfortline automático
+								</h2>
+
+								<div class="offer-details">
+									<div class="px-lg-5 row justify-content-center">
+										<div class="col col-6">
+											<img src="./assets/img/icons/icon-1.jpg" alt="Ícone" />
+											Flex
+										</div>
+										<div class="col col-6">
+											<img src="./assets/img/icons/icon-2.jpg" alt="Ícone" />
+											2020
+										</div>
+										<div class="col-12"></div>
+										<div class="col col-6">
+											<img src="./assets/img/icons/icon-3.jpg" alt="Ícone" />
+											0 km
+										</div>
+										<div class="col col-6">
+											<img src="./assets/img/icons/icon-4.jpg" alt="Ícone" />
+											Prata
+										</div>
+									</div>
+								</div>
+
+								<h2 class="offer-value">R$ 68.900,00</h2>
+							</div>
+
+							<div class="offer-item custom-carousel-item">
+								<img src="./assets/img/carro0/oferta-2.jpg" alt="Carro 0km" />
+								<h2 class="offer-name">
+									Volkswagen Gol 1.0 12V MPI Totalflex 4P Manual
+								</h2>
+
+								<div class="offer-details">
+									<div class="px-lg-5 row justify-content-center">
+										<div class="col col-6">
+											<img src="./assets/img/icons/icon-1.jpg" alt="Ícone" />
+											Flex
+										</div>
+										<div class="col col-6">
+											<img src="./assets/img/icons/icon-2.jpg" alt="Ícone" />
+											2020
+										</div>
+										<div class="col-12"></div>
+										<div class="col col-6">
+											<img src="./assets/img/icons/icon-3.jpg" alt="Ícone" />
+											0 km
+										</div>
+										<div class="col col-6">
+											<img src="./assets/img/icons/icon-4.jpg" alt="Ícone" />
+											Prata
+										</div>
+									</div>
+								</div>
+
+								<h2 class="offer-value">R$ 68.900,00</h2>
+							</div>
+
+							<div class="offer-item custom-carousel-item">
+								<img src="./assets/img/carro0/oferta-3.jpg" alt="Carro 0km" />
+								<h2 class="offer-name">
+									Volkswagen Fox 1.6 MSI total flex connect manual
+								</h2>
+
+								<div class="offer-details">
+									<div class="px-lg-5 row justify-content-center">
+										<div class="col col-6">
+											<img src="./assets/img/icons/icon-1.jpg" alt="Ícone" />
+											Flex
+										</div>
+										<div class="col col-6">
+											<img src="./assets/img/icons/icon-2.jpg" alt="Ícone" />
+											2020
+										</div>
+										<div class="col-12"></div>
+										<div class="col col-6">
+											<img src="./assets/img/icons/icon-3.jpg" alt="Ícone" />
+											0 km
+										</div>
+										<div class="col col-6">
+											<img src="./assets/img/icons/icon-4.jpg" alt="Ícone" />
+											Prata
+										</div>
+									</div>
+								</div>
+
+								<h2 class="offer-value">R$ 68.900,00</h2>
+							</div>
+
+							<div class="offer-item custom-carousel-item">
+								<img src="./assets/img/carro0/oferta-4.jpg" alt="Carro 0km" />
+								<h2 class="offer-name">
+									Volkswagen Polo 1.0 200 TSI Comfortline automático
+								</h2>
+
+								<div class="offer-details">
+									<div class="px-lg-5 row justify-content-center">
+										<div class="col col-6">
+											<img src="./assets/img/icons/icon-1.jpg" alt="Ícone" />
+											Flex
+										</div>
+										<div class="col col-6">
+											<img src="./assets/img/icons/icon-2.jpg" alt="Ícone" />
+											2020
+										</div>
+										<div class="col-12"></div>
+										<div class="col col-6">
+											<img src="./assets/img/icons/icon-3.jpg" alt="Ícone" />
+											0 km
+										</div>
+										<div class="col col-6">
+											<img src="./assets/img/icons/icon-4.jpg" alt="Ícone" />
+											Prata
+										</div>
+									</div>
+								</div>
+
+								<h2 class="offer-value">R$ 68.900,00</h2>
+							</div>
+						</div>
+
+						<button class="custom-carousel-button">
+							<i class="fas fa-chevron-right"></i>
+						</button>
+					</div>
+
+					<div class="d-flex flex-column align-items-center mt-4">
+						<a
+							href="#"
+							class="btn btn-lg btn-primary rounded-pill py-3 px-4 text-uppercase"
+						>
+							Ver todos
+							<span class="d-none d-sm-inline"> os modelos disponíveis </span>
+						</a>
+					</div>
+				</section>
+			</div>
+		</main>
 
 		<footer id="footer" class="d-flex align-items-center">
 			<div class="container align-items-center">
@@ -224,6 +774,8 @@
 				</a>
 			</div>
 		</aside>
+
 		<script src="./assets/js/navbar.js"></script>
+		<script src="./assets/js/carousel.js"></script>
 	</body>
 </html>

@@ -5,7 +5,7 @@
 
 #footer,
 #bottombar {
-	background-color: #01305f;
+	background-color: var(--primary-color);
 	color: #fff;
 }
 

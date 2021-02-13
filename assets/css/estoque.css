@@ -1,0 +1,85 @@
+main {
+	padding-top: 0px;
+}
+
+.subtitle {
+	color: var(--secondary-color);
+	font-size: 20px;
+	font-family: "VW Text Regular", Roboto, sans-serif;
+}
+
+#custom-cards .custom-card {
+	margin-bottom: 34px;
+}
+
+#custom-cards .custom-card .custom-card-details {
+	font-size: 12px;
+}
+
+#custom-cards .custom-card .custom-card-details img {
+	height: 14px;
+	width: 14px;
+}
+
+#custom-cards .custom-card-name {
+	font-size: 14px;
+}
+
+#tabs .nav-tabs .nav-link {
+	color: var(--secondary-color);
+	font-family: "VW Head Regular", Roboto, sans-serif;
+}
+
+.model-item img {
+	object-fit: contain;
+	object-position: center;
+	width: 100%;
+}
+
+.model-item .model-name {
+	color: var(--primary-color);
+	font-family: "VW Head Bold", Roboto, sans-serif;
+	font-size: 22px;
+	margin-bottom: 0px;
+	margin-top: 8px;
+	text-align: center;
+}
+
+.form header {
+	padding-bottom: 18px;
+}
+
+.form label {
+	font-family: "VW Text Bold", Roboto, sans-serif;
+	margin-bottom: 0px;
+}
+
+.form .row-values span {
+	color: var(--secondary-color);
+	font-family: "VW Text Regular", Roboto, sans-serif;
+	font-size: 12px;
+}
+
+.slider {
+	width: 100% !important;
+}
+
+.slider-selection {
+	background: var(--primary-color);
+}
+
+.slider-handle {
+	background-image: none;
+	background-color: #fff;
+	box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+}
+
+.slider-track {
+	height: 14px !important;
+}
+
+@media (min-width: 768px) {
+	#custom-cards .custom-card > img {
+		height: 170px !important;
+	}
+}

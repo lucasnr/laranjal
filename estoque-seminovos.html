@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Laranjal Automoveis - Tradição e Inovação</title>
+
+		<!-- bootstrap -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+			integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+			crossorigin="anonymous"
+		/>
+		<script
+			src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+			integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/11.0.2/bootstrap-slider.min.js"
+			integrity="sha512-f0VlzJbcEB6KiW8ZVtL+5HWPDyW1+nJEjguZ5IVnSQkvZbwBt2RfCBY0CBO1PsMAqxxrG4Di6TfsCPP3ZRwKpA=="
+			crossorigin="anonymous"
+		></script>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/11.0.2/css/bootstrap-slider.css"
+			integrity="sha512-SZgE3m1he0aEF3tIxxnz/3mXu/u/wlMNxQSnE0Cni9j/O8Gs+TjM9tm1NX34nRQ7GiLwUEzwuE3Wv2FLz2667w=="
+			crossorigin="anonymous"
+		/>
+		<!-- end:bootstrap -->
+		<!-- fontawesome -->
+		<script
+			src="https://kit.fontawesome.com/dd5260fcce.js"
+			crossorigin="anonymous"
+		></script>
+		<!-- end:fontawesome -->
+		<!-- google fonts -->
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@400;500;700&family=Source+Sans+Pro:wght@400;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- end:google fonts -->
+
+		<link rel="stylesheet" href="./assets/css/styles.css" />
+		<link rel="stylesheet" href="./assets/css/block/topbar.css" />
+		<link rel="stylesheet" href="./assets/css/block/navbar.css" />
+		<link rel="stylesheet" href="./assets/css/block/footer.css" />
+		<link rel="stylesheet" href="./assets/css/block/custom-carousel.css" />
+		<link rel="stylesheet" href="./assets/css/block/custom-card.css" />
+		<link rel="stylesheet" href="./assets/css/estoque.css" />
+	</head>
+	<body>
+		<aside
+			id="topbar"
+			class="text-uppercase d-flex flex-column justify-content-center"
+		>
+			<div
+				class="container d-flex align-items-center justify-content-center justify-content-md-end"
+			>
+				<span class="d-none d-md-block">Fale conosco:</span>
+
+				<a href="#" class="d-none d-md-flex align-items-center btn ml-3">
+					<i class="fas fa-phone-alt"></i>
+					Telefones
+				</a>
+				<a href="#" class="d-none d-md-flex align-items-center btn">
+					<i class="fab fa-whatsapp"></i>
+					Whatsapp
+				</a>
+
+				<div class="social-media justify-content-center">
+					<a href="#">
+						<i class="fab fa-facebook"></i>
+					</a>
+					<a href="#">
+						<i class="fab fa-instagram"></i>
+					</a>
+					<a href="#">
+						<i class="fab fa-linkedin"></i>
+					</a>
+				</div>
+			</div>
+		</aside>
+
+		<nav
+			id="navbar"
+			class="d-flex flex-column justify-content-center position-relative"
+		>
+			<div class="container px-0 d-flex justify-content-between">
+				<a
+					href="#"
+					id="navbar-brand"
+					class="d-none d-md-flex align-items-start"
+				>
+					<img
+						src="./assets/img/logo.png"
+						alt="Logomarca Laranjal"
+						class="w-100 d-block"
+					/>
+				</a>
+
+				<div id="nav" class="d-flex flex-column flex-md-grow-1">
+					<button
+						id="menu-toggler"
+						role="button"
+						tabindex="0"
+						aria-label="Menu Toggle"
+						class="mx-md-auto d-flex align-items-center justify-content-center"
+					>
+						<i class="fas fa-bars"></i>
+						<span class="d-none">Esconder ou expandir menu</span>
+					</button>
+
+					<ul
+						class="list-unstyled my-auto"
+						aria-hidden="false"
+						aria-expanded="false"
+					>
+						<li>
+							<a href="#">Novos</a>
+						</li>
+						<li>
+							<a href="#">Seminovos</a>
+						</li>
+						<li>
+							<a href="#">Serviços</a>
+						</li>
+						<li>
+							<a href="#">Ofertas</a>
+						</li>
+						<li>
+							<a href="#">Peças e acessórios</a>
+						</li>
+						<li>
+							<a href="#">Consórcio</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<main>
+			<header>
+				<img
+					src="./assets/img/banner-seminovos.jpg"
+					alt="Carro Seminovo"
+					class="w-100 d-block"
+				/>
+			</header>
+
+			<div class="container">
+				<section class="py-4 pt-md-5">
+					<h1 class="title text-center">Seminovos</h1>
+					<h6 class="subtitle text-center">
+						O seu seminovo você encontra aqui!
+					</h6>
+
+					<div class="row pt-5">
+						<div class="col-lg-8 col-xl-9">
+							<section id="custom-cards" class="row">
+								<div class="col-sm-6 col-md-4 col-xl-3">
+									<div class="custom-card">
+										<img src="./assets/img/cars/13.jpg" alt="Carro 0km" />
+										<h2 class="custom-card-name">
+											Volkswagen Gol 1.0 12V MPI Totalflex 4P Manual
+										</h2>
+
+										<div class="custom-card-details">
+											<div class="px-5 px-md-3 row justify-content-center">
+												<div class="col col-6">
+													<img
+														src="./assets/img/icons/icon-1.jpg"
+														alt="Ícone"
+													/>
+													Flex
+												</div>
+												<div class="col col-6">
+													<img
+														src="./assets/img/icons/icon-2.jpg"
+														alt="Ícone"
+													/>
+													2020
+												</div>
+												<div class="col-12"></div>
+												<div class="col col-6">
+													<img
+														src="./assets/img/icons/icon-3.jpg"
+														alt="Ícone"
+													/>
+													0 km
+												</div>
+												<div class="col col-6">
+													<img
+														src="./assets/img/icons/icon-4.jpg"
+														alt="Ícone"
+													/>
+													Prata
+												</div>
+											</div>
+										</div>
+
+										<h2 class="custom-card-value">R$ 68.900,00</h2>
+									</div>
+								</div>
+								<div class="col-sm-6 col-md-4 col-xl-3">
+									<div class="custom-card">
+										<img src="./assets/img/cars/13.jpg" alt="Carro 0km" />
+										<h2 class="custom-card-name">
+											Volkswagen Gol 1.0 12V MPI Totalflex 4P Manual
+										</h2>
+
+										<div class="custom-card-details">
+											<div class="px-5 px-md-3 row justify-content-center">
+												<div class="col col-6">
+													<img
+														src="./assets/img/icons/icon-1.jpg"
+														alt="Ícone"
+													/>
+													Flex
+												</div>
+												<div class="col col-6">
+													<img
+														src="./assets/img/icons/icon-2.jpg"
+														alt="Ícone"
+													/>
+													2020
+												</div>
+												<div class="col-12"></div>
+												<div class="col col-6">
+													<img
+														src="./assets/img/icons/icon-3.jpg"
+														alt="Ícone"
+													/>
+													0 km
+												</div>
+												<div class="col col-6">
+													<img
+														src="./assets/img/icons/icon-4.jpg"
+														alt="Ícone"
+													/>
+													Prata
+												</div>
+											</div>
+										</div>
+
+										<h2 class="custom-card-value">R$ 68.900,00</h2>
+									</div>
+								</div>
+								<div class="col-sm-6 col-md-4 col-xl-3">
+									<div class="custom-card">
+										<img src="./assets/img/cars/13.jpg" alt="Carro 0km" />
+										<h2 class="custom-card-name">
+											Volkswagen Gol 1.0 12V MPI Totalflex 4P Manual
+										</h2>
+
+										<div class="custom-card-details">
+											<div class="px-5 px-md-3 row justify-content-center">
+												<div class="col col-6">
+													<img
+														src="./assets/img/icons/icon-1.jpg"
+														alt="Ícone"
+													/>
+													Flex
+												</div>
+												<div class="col col-6">
+													<img
+														src="./assets/img/icons/icon-2.jpg"
+														alt="Ícone"
+													/>
+													2020
+												</div>
+												<div class="col-12"></div>
+												<div class="col col-6">
+													<img
+														src="./assets/img/icons/icon-3.jpg"
+														alt="Ícone"
+													/>
+													0 km
+												</div>
+												<div class="col col-6">
+													<img
+														src="./assets/img/icons/icon-4.jpg"
+														alt="Ícone"
+													/>
+													Prata
+												</div>
+											</div>
+										</div>
+
+										<h2 class="custom-card-value">R$ 68.900,00</h2>
+									</div>
+								</div>
+								<div class="col-sm-6 col-md-4 col-xl-3">
+									<div class="custom-card">
+										<img src="./assets/img/cars/13.jpg" alt="Carro 0km" />
+										<h2 class="custom-card-name">
+											Volkswagen Gol 1.0 12V MPI Totalflex 4P Manual
+										</h2>
+
+										<div class="custom-card-details">
+											<div class="px-5 px-md-3 row justify-content-center">
+												<div class="col col-6">
+													<img
+														src="./assets/img/icons/icon-1.jpg"
+														alt="Ícone"
+													/>
+													Flex
+												</div>
+												<div class="col col-6">
+													<img
+														src="./assets/img/icons/icon-2.jpg"
+														alt="Ícone"
+													/>
+													2020
+												</div>
+												<div class="col-12"></div>
+												<div class="col col-6">
+													<img
+														src="./assets/img/icons/icon-3.jpg"
+														alt="Ícone"
+													/>
+													0 km
+												</div>
+												<div class="col col-6">
+													<img
+														src="./assets/img/icons/icon-4.jpg"
+														alt="Ícone"
+													/>
+													Prata
+												</div>
+											</div>
+										</div>
+
+										<h2 class="custom-card-value">R$ 68.900,00</h2>
+									</div>
+								</div>
+
+								<div class="col-sm-6 col-md-4 col-xl-3">
+									<div class="custom-card">
+										<img src="./assets/img/cars/13.jpg" alt="Carro 0km" />
+										<h2 class="custom-card-name">
+											Volkswagen Gol 1.0 12V MPI Totalflex 4P Manual
+										</h2>
+
+										<div class="custom-card-details">
+											<div class="px-5 px-md-3 row justify-content-center">
+												<div class="col col-6">
+													<img
+														src="./assets/img/icons/icon-1.jpg"
+														alt="Ícone"
+													/>
+													Flex
+												</div>
+												<div class="col col-6">
+													<img
+														src="./assets/img/icons/icon-2.jpg"
+														alt="Ícone"
+													/>
+													2020
+												</div>
+												<div class="col-12"></div>
+												<div class="col col-6">
+													<img
+														src="./assets/img/icons/icon-3.jpg"
+														alt="Ícone"
+													/>
+													0 km
+												</div>
+												<div class="col col-6">
+													<img
+														src="./assets/img/icons/icon-4.jpg"
+														alt="Ícone"
+													/>
+													Prata
+												</div>
+											</div>
+										</div>
+
+										<h2 class="custom-card-value">R$ 68.900,00</h2>
+									</div>
+								</div>
+								<div class="col-sm-6 col-md-4 col-xl-3">
+									<div class="custom-card">
+										<img src="./assets/img/cars/13.jpg" alt="Carro 0km" />
+										<h2 class="custom-card-name">
+											Volkswagen Gol 1.0 12V MPI Totalflex 4P Manual
+										</h2>
+
+										<div class="custom-card-details">
+											<div class="px-5 px-md-3 row justify-content-center">
+												<div class="col col-6">
+													<img
+														src="./assets/img/icons/icon-1.jpg"
+														alt="Ícone"
+													/>
+													Flex
+												</div>
+												<div class="col col-6">
+													<img
+														src="./assets/img/icons/icon-2.jpg"
+														alt="Ícone"
+													/>
+													2020
+												</div>
+												<div class="col-12"></div>
+												<div class="col col-6">
+													<img
+														src="./assets/img/icons/icon-3.jpg"
+														alt="Ícone"
+													/>
+													0 km
+												</div>
+												<div class="col col-6">
+													<img
+														src="./assets/img/icons/icon-4.jpg"
+														alt="Ícone"
+													/>
+													Prata
+												</div>
+											</div>
+										</div>
+
+										<h2 class="custom-card-value">R$ 68.900,00</h2>
+									</div>
+								</div>
+								<div class="col-sm-6 col-md-4 col-xl-3">
+									<div class="custom-card">
+										<img src="./assets/img/cars/13.jpg" alt="Carro 0km" />
+										<h2 class="custom-card-name">
+											Volkswagen Gol 1.0 12V MPI Totalflex 4P Manual
+										</h2>
+
+										<div class="custom-card-details">
+											<div class="px-5 px-md-3 row justify-content-center">
+												<div class="col col-6">
+													<img
+														src="./assets/img/icons/icon-1.jpg"
+														alt="Ícone"
+													/>
+													Flex
+												</div>
+												<div class="col col-6">
+													<img
+														src="./assets/img/icons/icon-2.jpg"
+														alt="Ícone"
+													/>
+													2020
+												</div>
+												<div class="col-12"></div>
+												<div class="col col-6">
+													<img
+														src="./assets/img/icons/icon-3.jpg"
+														alt="Ícone"
+													/>
+													0 km
+												</div>
+												<div class="col col-6">
+													<img
+														src="./assets/img/icons/icon-4.jpg"
+														alt="Ícone"
+													/>
+													Prata
+												</div>
+											</div>
+										</div>
+
+										<h2 class="custom-card-value">R$ 68.900,00</h2>
+									</div>
+								</div>
+								<div class="col-sm-6 col-md-4 col-xl-3">
+									<div class="custom-card">
+										<img src="./assets/img/cars/13.jpg" alt="Carro 0km" />
+										<h2 class="custom-card-name">
+											Volkswagen Gol 1.0 12V MPI Totalflex 4P Manual
+										</h2>
+
+										<div class="custom-card-details">
+											<div class="px-5 px-md-3 row justify-content-center">
+												<div class="col col-6">
+													<img
+														src="./assets/img/icons/icon-1.jpg"
+														alt="Ícone"
+													/>
+													Flex
+												</div>
+												<div class="col col-6">
+													<img
+														src="./assets/img/icons/icon-2.jpg"
+														alt="Ícone"
+													/>
+													2020
+												</div>
+												<div class="col-12"></div>
+												<div class="col col-6">
+													<img
+														src="./assets/img/icons/icon-3.jpg"
+														alt="Ícone"
+													/>
+													0 km
+												</div>
+												<div class="col col-6">
+													<img
+														src="./assets/img/icons/icon-4.jpg"
+														alt="Ícone"
+													/>
+													Prata
+												</div>
+											</div>
+										</div>
+
+										<h2 class="custom-card-value">R$ 68.900,00</h2>
+									</div>
+								</div>
+							</section>
+						</div>
+
+						<div class="col-12 col-lg-4 col-xl-3">
+							<form class="form">
+								<header class="text-center py-2">
+									<h4 class="form-title mb-0">O que você procura?</h4>
+								</header>
+
+								<div class="form-body px-4">
+									<div class="form-group">
+										<input
+											type="text"
+											class="form-control text-center"
+											placeholder="Digite o modelo do veículo"
+										/>
+									</div>
+
+									<div class="form-group">
+										<label>Valor</label>
+										<div class="px-2">
+											<input id="input-range-value" type="text" />
+										</div>
+										<div class="row-values d-flex justify-content-between mt-2">
+											<span>53.500</span>
+											<span>63.500</span>
+											<span>73.000</span>
+											<span>83.000</span>
+											<span>92.500</span>
+										</div>
+									</div>
+
+									<div class="form-group">
+										<label>Ano</label>
+										<div class="px-2">
+											<input id="input-range-year" type="text" />
+										</div>
+										<div class="row-values d-flex justify-content-between mt-2">
+											<span>2019</span>
+											<span>2020</span>
+											<span>2020</span>
+											<span>2021</span>
+											<span>2021</span>
+										</div>
+									</div>
+
+									<button
+										type="submit"
+										class="btn btn-lg btn-success w-100 text-uppercase mt-4 rounded-pill px-3 px-xl-5"
+									>
+										Buscar
+									</button>
+								</div>
+								<!-- end:form-body -->
+							</form>
+						</div>
+					</div>
+				</section>
+			</div>
+		</main>
+
+		<footer id="footer" class="d-flex align-items-center">
+			<div class="container align-items-center">
+				<img
+					id="footer-brand"
+					src="./assets/img/logo-alt.png"
+					alt="Logomarca Laranjal"
+					class="d-none d-md-block"
+				/>
+
+				<section id="footer-nav" class="d-none d-lg-block">
+					<ul class="list-unstyled mb-0">
+						<li>
+							<a href="#">> Novos</a>
+						</li>
+						<li>
+							<a href="#">> Seminovos</a>
+						</li>
+						<li>
+							<a href="#">> Ofertas</a>
+						</li>
+						<li>
+							<a href="#">> Peças e Acessórios</a>
+						</li>
+						<li>
+							<a href="#">> Consórcio</a>
+						</li>
+						<li>
+							<a href="#">> Institucional</a>
+						</li>
+						<li>
+							<a href="#">> Contato</a>
+						</li>
+					</ul>
+				</section>
+
+				<section
+					id="footer-contact"
+					class="d-flex flex-column text-center text-md-left"
+				>
+					<h6 class="footer-title">Entre em Contato</h6>
+
+					<p class="text-nowrap">
+						<strong class="d-block mt-1">Telefone</strong>
+						Tel: (15) 3383-9800
+					</p>
+					<p class="text-nowrap">
+						<strong class="d-block">Whatsapp</strong>
+						(15) 99115-9068
+					</p>
+					<p class="text-nowrap">
+						<strong>CRW VW:</strong>
+						<span>0800 195 775</span>
+						<br />
+						<strong>VW Service:</strong>
+						0800 195 775
+					</p>
+				</section>
+
+				<section class="d-none d-md-flex flex-column h-100">
+					<h6 class="footer-title">Onde Estamos?</h6>
+
+					<div class="my-auto">
+						<p>
+							<strong class="d-block">Endereço</strong>
+							Av. Pref. Hermelindo Pillon, 370 – Jardim Elite li, Laranjal
+							Paulista – SP – 18500-000
+						</p>
+
+						<div class="social-media justify-content-center mb-2">
+							<a href="#">
+								<i class="fab fa-facebook"></i>
+							</a>
+							<a href="#">
+								<i class="fab fa-instagram"></i>
+							</a>
+							<a href="#">
+								<i class="fab fa-linkedin"></i>
+							</a>
+						</div>
+					</div>
+				</section>
+			</div>
+		</footer>
+
+		<aside id="bottombar" class="d-flex align-items-center">
+			<div class="container d-flex flex-column flex-md-row align-items-center">
+				<span class="flex-grow-1 text-center">
+					Todos os direitos reservados, Laranjal Automóveis @ 2021
+				</span>
+
+				<a href="#" id="bottombar-brand" class="ml-md-auto my-1 my-md-0">
+					<img
+						src="./assets/img/idw-logo.png"
+						alt="Logomarca IDW Digital"
+						class="w-100"
+					/>
+				</a>
+			</div>
+		</aside>
+
+		<script src="./assets/js/navbar.js"></script>
+		<script src="./assets/js/carousel.js"></script>
+		<script src="./assets/js/sliders.js"></script>
+	</body>
+</html>

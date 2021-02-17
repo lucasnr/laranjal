@@ -156,6 +156,30 @@ main .container {
 	opacity: 0.9;
 }
 
+.swiper-button-next,
+.swiper-button-prev {
+	font-family: "Font Awesome 5 Free";
+	font-weight: 900;
+	height: 36px;
+	outline: none;
+	width: 36px;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+	color: var(--primary-color);
+	font-family: inherit;
+	font-size: 22px;
+}
+
+.swiper-button-next::after {
+	content: "\f054";
+}
+
+.swiper-button-prev::after {
+	content: "\f053";
+}
+
 @media (min-width: 576px) {
 	.nav-tabs .nav-link {
 		margin-right: 32px;
@@ -165,5 +189,33 @@ main .container {
 @media (min-width: 768px) {
 	.title {
 		font-size: 50px;
+	}
+}
+
+.controls-swiper {
+	position: relative;
+}
+
+.controls-swiper .swiper-button-prev {
+	left: -15px;
+}
+
+.controls-swiper .swiper-button-next {
+	right: -15px;
+}
+
+@media (max-width: 1516px) {
+	.controls-swiper .swiper-container {
+		width: calc(100% - 42px);
+	}
+}
+
+@media (min-width: 1516px) {
+	.controls-swiper .swiper-button-prev {
+		left: -36px;
+	}
+
+	.controls-swiper .swiper-button-next {
+		right: -36px;
 	}
 }

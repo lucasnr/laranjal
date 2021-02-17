@@ -24,6 +24,13 @@
 			crossorigin="anonymous"
 		></script>
 		<!-- end:bootstrap -->
+		<!-- swiper -->
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/swiper/swiper-bundle.min.css"
+		/>
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+		<!-- end:swiper -->
 		<!-- fontawesome -->
 		<script
 			src="https://kit.fontawesome.com/dd5260fcce.js"
@@ -43,7 +50,6 @@
 		<link rel="stylesheet" href="./assets/css/block/navbar.css" />
 		<link rel="stylesheet" href="./assets/css/block/footer.css" />
 		<link rel="stylesheet" href="./assets/css/carro0.css" />
-		<link rel="stylesheet" href="./assets/css/block/custom-carousel.css" />
 		<link rel="stylesheet" href="./assets/css/block/custom-card.css" />
 	</head>
 	<body>
@@ -141,23 +147,60 @@
 				<div class="row">
 					<div class="col-lg-7 col-xl-8">
 						<section id="gallery">
-							<img src="./assets/img/cars/7.jpg" alt="Carro 0km" />
-
-							<div id="gallery-row">
-								<div class="gallery-item">
-									<img src="./assets/img/cars/8.jpg" alt="Carro 0km" />
+							<div class="swiper-container gallery-top">
+								<div class="swiper-wrapper">
+									<div
+										class="swiper-slide"
+										style="background-image: url(./assets/img/cars/7.jpg)"
+									></div>
+									<div
+										class="swiper-slide"
+										style="background-image: url(./assets/img/cars/8.jpg)"
+									></div>
+									<div
+										class="swiper-slide"
+										style="background-image: url(./assets/img/cars/9.jpg)"
+									></div>
+									<div
+										class="swiper-slide"
+										style="background-image: url(./assets/img/cars/10.jpg)"
+									></div>
+									<div
+										class="swiper-slide"
+										style="background-image: url(./assets/img/cars/11.jpg)"
+									></div>
+									<div
+										class="swiper-slide"
+										style="background-image: url(./assets/img/cars/12.jpg)"
+									></div>
 								</div>
-								<div class="gallery-item">
-									<img src="./assets/img/cars/9.jpg" alt="Carro 0km" />
-								</div>
-								<div class="gallery-item">
-									<img src="./assets/img/cars/10.jpg" alt="Carro 0km" />
-								</div>
-								<div class="gallery-item">
-									<img src="./assets/img/cars/11.jpg" alt="Carro 0km" />
-								</div>
-								<div class="gallery-item">
-									<img src="./assets/img/cars/12.jpg" alt="Carro 0km" />
+							</div>
+							<div class="swiper-container gallery-thumbs">
+								<div class="swiper-wrapper">
+									<div
+										class="swiper-slide"
+										style="background-image: url(./assets/img/cars/7.jpg)"
+									></div>
+									<div
+										class="swiper-slide"
+										style="background-image: url(./assets/img/cars/8.jpg)"
+									></div>
+									<div
+										class="swiper-slide"
+										style="background-image: url(./assets/img/cars/9.jpg)"
+									></div>
+									<div
+										class="swiper-slide"
+										style="background-image: url(./assets/img/cars/10.jpg)"
+									></div>
+									<div
+										class="swiper-slide"
+										style="background-image: url(./assets/img/cars/11.jpg)"
+									></div>
+									<div
+										class="swiper-slide"
+										style="background-image: url(./assets/img/cars/12.jpg)"
+									></div>
 								</div>
 							</div>
 						</section>
@@ -425,241 +468,191 @@
 				<section id="offers" class="py-5">
 					<h2 class="title text-center">Confira outras ofertas</h2>
 
-					<div class="custom-carousel-wrapper">
-						<button class="custom-carousel-button">
-							<i class="fas fa-chevron-left"></i>
-						</button>
+					<div id="offers-carousel" class="controls-swiper">
+						<div class="swiper-container">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="custom-card">
+										<img src="./assets/img/cars/oferta-1.jpg" alt="Carro 0km" />
+										<h2 class="custom-card-name">
+											Volkswagen Voyage 1.6 MSI Totalflex 4p Manual
+										</h2>
 
-						<div id="offers-carousel" class="custom-carousel">
-							<div class="custom-carousel-item">
-								<div class="custom-card">
-									<img src="./assets/img/cars/oferta-1.jpg" alt="Carro 0km" />
-									<h2 class="custom-card-name">
-										Volkswagen Voyage 1.6 MSI Totalflex 4p Manual
-									</h2>
-
-									<div class="custom-card-details">
-										<div class="px-lg-5 row justify-content-center">
-											<div class="col col-6">
-												<img src="./assets/img/icons/icon-1.jpg" alt="Ícone" />
-												Flex
-											</div>
-											<div class="col col-6">
-												<img src="./assets/img/icons/icon-2.jpg" alt="Ícone" />
-												2020
-											</div>
-											<div class="col-12"></div>
-											<div class="col col-6">
-												<img src="./assets/img/icons/icon-3.jpg" alt="Ícone" />
-												0 km
-											</div>
-											<div class="col col-6">
-												<img src="./assets/img/icons/icon-4.jpg" alt="Ícone" />
-												Prata
+										<div class="custom-card-details">
+											<div class="px-2 px-lg-4 row justify-content-center">
+												<div class="col col-6">
+													<img
+														src="./assets/img/icons/icon-1.jpg"
+														alt="Ícone"
+													/>
+													Flex
+												</div>
+												<div class="col col-6">
+													<img
+														src="./assets/img/icons/icon-2.jpg"
+														alt="Ícone"
+													/>
+													2020
+												</div>
+												<div class="col-12"></div>
+												<div class="col col-6">
+													<img
+														src="./assets/img/icons/icon-3.jpg"
+														alt="Ícone"
+													/>
+													0 km
+												</div>
+												<div class="col col-6">
+													<img
+														src="./assets/img/icons/icon-4.jpg"
+														alt="Ícone"
+													/>
+													Prata
+												</div>
 											</div>
 										</div>
-									</div>
 
-									<h2 class="custom-card-value">R$ 68.900,00</h2>
+										<h2 class="custom-card-value">R$ 68.900,00</h2>
+									</div>
 								</div>
-							</div>
-							<div class="custom-carousel-item">
-								<div class="custom-card">
-									<img src="./assets/img/cars/oferta-2.jpg" alt="Carro 0km" />
-									<h2 class="custom-card-name">
-										Volkswagen Gol 1.0 12V MPI Totalflex 4P Manual
-									</h2>
+								<div class="swiper-slide">
+									<div class="custom-card">
+										<img src="./assets/img/cars/oferta-2.jpg" alt="Carro 0km" />
+										<h2 class="custom-card-name">
+											Volkswagen Gol 1.0 12V MPI Totalflex 4P Manual
+										</h2>
 
-									<div class="custom-card-details">
-										<div class="px-lg-5 row justify-content-center">
-											<div class="col col-6">
-												<img src="./assets/img/icons/icon-1.jpg" alt="Ícone" />
-												Flex
-											</div>
-											<div class="col col-6">
-												<img src="./assets/img/icons/icon-2.jpg" alt="Ícone" />
-												2020
-											</div>
-											<div class="col-12"></div>
-											<div class="col col-6">
-												<img src="./assets/img/icons/icon-3.jpg" alt="Ícone" />
-												0 km
-											</div>
-											<div class="col col-6">
-												<img src="./assets/img/icons/icon-4.jpg" alt="Ícone" />
-												Prata
+										<div class="custom-card-details">
+											<div class="px-2 px-lg-4 row justify-content-center">
+												<div class="col col-6">
+													<img
+														src="./assets/img/icons/icon-1.jpg"
+														alt="Ícone"
+													/>
+													Flex
+												</div>
+												<div class="col col-6">
+													<img
+														src="./assets/img/icons/icon-2.jpg"
+														alt="Ícone"
+													/>
+													2020
+												</div>
+												<div class="col-12"></div>
+												<div class="col col-6">
+													<img
+														src="./assets/img/icons/icon-3.jpg"
+														alt="Ícone"
+													/>
+													0 km
+												</div>
+												<div class="col col-6">
+													<img
+														src="./assets/img/icons/icon-4.jpg"
+														alt="Ícone"
+													/>
+													Prata
+												</div>
 											</div>
 										</div>
-									</div>
 
-									<h2 class="custom-card-value">R$ 68.900,00</h2>
+										<h2 class="custom-card-value">R$ 68.900,00</h2>
+									</div>
 								</div>
-							</div>
-							<div class="custom-carousel-item">
-								<div class="custom-card">
-									<img src="./assets/img/cars/oferta-3.jpg" alt="Carro 0km" />
-									<h2 class="custom-card-name">
-										Volkswagen Fox 1.6 MSI total flex connect manual
-									</h2>
+								<div class="swiper-slide">
+									<div class="custom-card">
+										<img src="./assets/img/cars/oferta-3.jpg" alt="Carro 0km" />
+										<h2 class="custom-card-name">
+											Volkswagen Fox 1.6 MSI total flex connect manual
+										</h2>
 
-									<div class="custom-card-details">
-										<div class="px-lg-5 row justify-content-center">
-											<div class="col col-6">
-												<img src="./assets/img/icons/icon-1.jpg" alt="Ícone" />
-												Flex
-											</div>
-											<div class="col col-6">
-												<img src="./assets/img/icons/icon-2.jpg" alt="Ícone" />
-												2020
-											</div>
-											<div class="col-12"></div>
-											<div class="col col-6">
-												<img src="./assets/img/icons/icon-3.jpg" alt="Ícone" />
-												0 km
-											</div>
-											<div class="col col-6">
-												<img src="./assets/img/icons/icon-4.jpg" alt="Ícone" />
-												Prata
+										<div class="custom-card-details">
+											<div class="px-2 px-lg-4 row justify-content-center">
+												<div class="col col-6">
+													<img
+														src="./assets/img/icons/icon-1.jpg"
+														alt="Ícone"
+													/>
+													Flex
+												</div>
+												<div class="col col-6">
+													<img
+														src="./assets/img/icons/icon-2.jpg"
+														alt="Ícone"
+													/>
+													2020
+												</div>
+												<div class="col-12"></div>
+												<div class="col col-6">
+													<img
+														src="./assets/img/icons/icon-3.jpg"
+														alt="Ícone"
+													/>
+													0 km
+												</div>
+												<div class="col col-6">
+													<img
+														src="./assets/img/icons/icon-4.jpg"
+														alt="Ícone"
+													/>
+													Prata
+												</div>
 											</div>
 										</div>
-									</div>
 
-									<h2 class="custom-card-value">R$ 68.900,00</h2>
+										<h2 class="custom-card-value">R$ 68.900,00</h2>
+									</div>
 								</div>
-							</div>
-							<div class="custom-carousel-item">
-								<div class="custom-card">
-									<img src="./assets/img/cars/oferta-4.jpg" alt="Carro 0km" />
-									<h2 class="custom-card-name">
-										Volkswagen Polo 1.0 200 TSI Comfortline automático
-									</h2>
+								<div class="swiper-slide">
+									<div class="custom-card">
+										<img src="./assets/img/cars/oferta-4.jpg" alt="Carro 0km" />
+										<h2 class="custom-card-name">
+											Volkswagen Polo 1.0 200 TSI Comfortline automático
+										</h2>
 
-									<div class="custom-card-details">
-										<div class="px-lg-5 row justify-content-center">
-											<div class="col col-6">
-												<img src="./assets/img/icons/icon-1.jpg" alt="Ícone" />
-												Flex
-											</div>
-											<div class="col col-6">
-												<img src="./assets/img/icons/icon-2.jpg" alt="Ícone" />
-												2020
-											</div>
-											<div class="col-12"></div>
-											<div class="col col-6">
-												<img src="./assets/img/icons/icon-3.jpg" alt="Ícone" />
-												0 km
-											</div>
-											<div class="col col-6">
-												<img src="./assets/img/icons/icon-4.jpg" alt="Ícone" />
-												Prata
+										<div class="custom-card-details">
+											<div class="px-2 px-lg-4 row justify-content-center">
+												<div class="col col-6">
+													<img
+														src="./assets/img/icons/icon-1.jpg"
+														alt="Ícone"
+													/>
+													Flex
+												</div>
+												<div class="col col-6">
+													<img
+														src="./assets/img/icons/icon-2.jpg"
+														alt="Ícone"
+													/>
+													2020
+												</div>
+												<div class="col-12"></div>
+												<div class="col col-6">
+													<img
+														src="./assets/img/icons/icon-3.jpg"
+														alt="Ícone"
+													/>
+													0 km
+												</div>
+												<div class="col col-6">
+													<img
+														src="./assets/img/icons/icon-4.jpg"
+														alt="Ícone"
+													/>
+													Prata
+												</div>
 											</div>
 										</div>
+
+										<h2 class="custom-card-value">R$ 68.900,00</h2>
 									</div>
-
-									<h2 class="custom-card-value">R$ 68.900,00</h2>
-								</div>
-							</div>
-							<div class="custom-carousel-item">
-								<div class="custom-card">
-									<img src="./assets/img/cars/oferta-2.jpg" alt="Carro 0km" />
-									<h2 class="custom-card-name">
-										Volkswagen Gol 1.0 12V MPI Totalflex 4P Manual
-									</h2>
-
-									<div class="custom-card-details">
-										<div class="px-lg-5 row justify-content-center">
-											<div class="col col-6">
-												<img src="./assets/img/icons/icon-1.jpg" alt="Ícone" />
-												Flex
-											</div>
-											<div class="col col-6">
-												<img src="./assets/img/icons/icon-2.jpg" alt="Ícone" />
-												2020
-											</div>
-											<div class="col-12"></div>
-											<div class="col col-6">
-												<img src="./assets/img/icons/icon-3.jpg" alt="Ícone" />
-												0 km
-											</div>
-											<div class="col col-6">
-												<img src="./assets/img/icons/icon-4.jpg" alt="Ícone" />
-												Prata
-											</div>
-										</div>
-									</div>
-
-									<h2 class="custom-card-value">R$ 68.900,00</h2>
-								</div>
-							</div>
-							<div class="custom-carousel-item">
-								<div class="custom-card">
-									<img src="./assets/img/cars/oferta-3.jpg" alt="Carro 0km" />
-									<h2 class="custom-card-name">
-										Volkswagen Fox 1.6 MSI total flex connect manual
-									</h2>
-
-									<div class="custom-card-details">
-										<div class="px-lg-5 row justify-content-center">
-											<div class="col col-6">
-												<img src="./assets/img/icons/icon-1.jpg" alt="Ícone" />
-												Flex
-											</div>
-											<div class="col col-6">
-												<img src="./assets/img/icons/icon-2.jpg" alt="Ícone" />
-												2020
-											</div>
-											<div class="col-12"></div>
-											<div class="col col-6">
-												<img src="./assets/img/icons/icon-3.jpg" alt="Ícone" />
-												0 km
-											</div>
-											<div class="col col-6">
-												<img src="./assets/img/icons/icon-4.jpg" alt="Ícone" />
-												Prata
-											</div>
-										</div>
-									</div>
-
-									<h2 class="custom-card-value">R$ 68.900,00</h2>
-								</div>
-							</div>
-							<div class="custom-carousel-item">
-								<div class="custom-card">
-									<img src="./assets/img/cars/oferta-4.jpg" alt="Carro 0km" />
-									<h2 class="custom-card-name">
-										Volkswagen Polo 1.0 200 TSI Comfortline automático
-									</h2>
-
-									<div class="custom-card-details">
-										<div class="px-lg-5 row justify-content-center">
-											<div class="col col-6">
-												<img src="./assets/img/icons/icon-1.jpg" alt="Ícone" />
-												Flex
-											</div>
-											<div class="col col-6">
-												<img src="./assets/img/icons/icon-2.jpg" alt="Ícone" />
-												2020
-											</div>
-											<div class="col-12"></div>
-											<div class="col col-6">
-												<img src="./assets/img/icons/icon-3.jpg" alt="Ícone" />
-												0 km
-											</div>
-											<div class="col col-6">
-												<img src="./assets/img/icons/icon-4.jpg" alt="Ícone" />
-												Prata
-											</div>
-										</div>
-									</div>
-
-									<h2 class="custom-card-value">R$ 68.900,00</h2>
 								</div>
 							</div>
 						</div>
 
-						<button class="custom-carousel-button">
-							<i class="fas fa-chevron-right"></i>
-						</button>
+						<!-- Add Arrows -->
+						<div class="swiper-button-next"></div>
+						<div class="swiper-button-prev"></div>
 					</div>
 
 					<div class="d-flex flex-column align-items-center mt-4">
@@ -776,6 +769,8 @@
 		</aside>
 
 		<script src="./assets/js/navbar.js"></script>
-		<script src="./assets/js/carousel.js"></script>
+		<script src="./assets/js/swiper.js"></script>
+		<script src="./assets/js/offers.js"></script>
+		<script src="./assets/js/gallery.js"></script>
 	</body>
 </html>

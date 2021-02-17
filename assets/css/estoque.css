@@ -78,6 +78,10 @@ main {
 	height: 14px !important;
 }
 
+.pagination a {
+	color: var(--primary-color);
+}
+
 @media (min-width: 768px) {
 	#custom-cards .custom-card > img {
 		height: 170px !important;

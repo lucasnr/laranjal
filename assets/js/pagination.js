@@ -28,7 +28,7 @@
 
 	const next = (e) => {
 		e.preventDefault();
-		if (current === items.length / 8 - 1) return;
+		if (current === Math.ceil(items.length / 8) - 1) return;
 
 		current++;
 		hideAll();
@@ -38,7 +38,7 @@
 	const createControls = () => {
 		const prev = nav.querySelector("li");
 
-		const amount = items.length / 8;
+		const amount = Math.ceil(items.length / 8);
 		for (let index = amount; index > 0; index--) {
 			const li = document.createElement("li");
 			li.classList.add("page-item");
